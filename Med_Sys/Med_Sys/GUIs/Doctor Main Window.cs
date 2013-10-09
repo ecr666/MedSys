@@ -21,7 +21,27 @@ namespace Med_Sys.GUIs
             AppointmentGrid.DataSource= apm.refreshDB().Tables[0];
         }
 
+        public Doctor_Main_Window()
+        {
+            // TODO: Complete member initialization
+        }
+
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            String slot = radioButton2.Text; ;
+            if (radioButton1.Checked)
+            {
+                slot = radioButton1.Text;
+            }
+            PrescriptionGrid.Rows.Add(txtName.Text, cmbForm.Text, boxInTime.Text, slot, comboBox2.Text, comboBox5.Text, comboBox1.Text);
+        }
+
+        private void btnPrescription_Click(object sender, EventArgs e)
         {
 
         }

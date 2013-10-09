@@ -97,6 +97,7 @@
             this.btnPrescription.TabIndex = 3;
             this.btnPrescription.Text = "Create Prescription";
             this.btnPrescription.UseVisualStyleBackColor = true;
+            this.btnPrescription.Click += new System.EventHandler(this.btnPrescription_Click);
             // 
             // textBox1
             // 
